@@ -94,6 +94,7 @@ async def main():
     #   print(descarga) > https://pawanasita.com/get/2286589/xn8zQ28wdGS5JlA8LnQku29pYXD0PPcNp9YQ7XaESqM/mp3
 
     # Makes an api request for download the song
+    time.sleep(2)
     r = requests.get(descarga)
     with open(corregido, "wb") as f:
         f.write(r.content)
