@@ -78,8 +78,8 @@ async def main():
 
     with open(str(corregido), "x") as file:
         pass
-    time.sleep(4)
-    await asyncio.sleep(10)
+    time.sleep(2)
+    await asyncio.sleep(3)
 
     # get the api link for download the file
     r = requests.get(f'{htmldwn}')
