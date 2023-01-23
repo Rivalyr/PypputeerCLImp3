@@ -64,7 +64,7 @@ async def main():
     # Creates the file and replace some characters in case of there are some. (windows reserved char. idk)
     # reserved windows characters and that. even change the "-" to "-" again just for practice pruporses
     nombre = songname
-    char_i = ["\\", "/", ":", "*", "?", "\"", "<", ">", "|", "-"]
+    char_i = ["\\", "/", "|", "-", ":", "*", "?", "\"", "<", ">"]
 
     for char in char_i:
         if char in nombre:
@@ -77,8 +77,9 @@ async def main():
             os.system('cls')
 
     with open(str(corregido), "x") as file:
-        time.sleep(2)
-    await asyncio.sleep(2)
+        pass
+    time.sleep(4)
+    await asyncio.sleep(10)
 
     # get the api link for download the file
     r = requests.get(f'{htmldwn}')
